@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    tools:context=".ui.fragments.IdeaDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_idea_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tv_idea_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/idea_title"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_idea_detail" />
+
+            <TextView
+                android:id="@+id/tv_idea_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_idea_title"
+                app:layout_constraintStart_toStartOf="@+id/tv_idea_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_title" />
+
+            <TextView
+                android:id="@+id/tv_idea_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/tv_priority"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_idea_description"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_idea_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_description" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_low"
+                android:layout_width="86dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/check_low"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_idea_priority"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_idea_priority"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_priority" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_medium"
+                android:layout_width="86dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/check_medium"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/rb_idea_high"
+                app:layout_constraintStart_toEndOf="@+id/rb_idea_low"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_priority" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_high"
+                android:layout_width="86dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="@string/check_high"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_idea_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_priority" />
+
+            <TextView
+                android:id="@+id/tv_idea_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/idea_detail_status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/rb_idea_high"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rb_idea_low"
+                app:layout_constraintTop_toBottomOf="@+id/rb_idea_medium" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_status1"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/rb_status_earring"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_idea_status"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_idea_status"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_status" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_status2"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/rb_status_in_progress"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/rb_idea_status3"
+                app:layout_constraintStart_toEndOf="@+id/rb_idea_status1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_status" />
+
+            <RadioButton
+                android:id="@+id/rb_idea_status3"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/rb_status_finished"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/rb_idea_high"
+                app:layout_constraintTop_toBottomOf="@+id/tv_idea_status" />
+
+            <Button
+                android:id="@+id/btn_save_idea_detail"
+                android:layout_width="309dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/et_new_detail"
+                app:layout_constraintStart_toStartOf="@+id/et_new_detail"
+                app:layout_constraintTop_toBottomOf="@+id/et_new_detail" />
+
+            <EditText
+                android:id="@+id/et_new_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="@string/hint_add_detail"
+                android:inputType="text"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/rb_idea_status3"
+                app:layout_constraintHorizontal_bias="0.311"
+                app:layout_constraintStart_toStartOf="@+id/rb_idea_status1"
+                app:layout_constraintTop_toBottomOf="@+id/rb_idea_status1" />
+
+            <TextView
+                android:id="@+id/tv_show_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_save_idea_detail"
+                app:layout_constraintStart_toStartOf="@+id/btn_save_idea_detail"
+                app:layout_constraintTop_toBottomOf="@+id/btn_save_idea_detail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

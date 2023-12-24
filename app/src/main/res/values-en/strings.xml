@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_password_hint">Password</string>
+    <string name="btn_create_account">Create account</string>
+    <string name="btn_enter">Enter</string>
+    <string name="register_title">Create account</string>
+    <string name="register_name_hint">Enter your username</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_password2_hint">Repeat password</string>
+    <string name="user_data_title">Account</string>
+    <string name="ideas_list_title">List</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_image_selection">Select image</string>
+    <string name="idea_title">New idea</string>
+    <string name="hint_idea_name">Idea name</string>
+    <string name="hind_idea_description">What is it about?</string>
+    <string name="tv_priority">Priority</string>
+    <string name="check_low">Low</string>
+    <string name="check_medium">Medium</string>
+    <string name="check_high">High</string>
+    <string name="btn_save">Save idea</string>
+    <string name="idea_detail_status">Status</string>
+    <string name="rb_status_earring">Pending</string>
+    <string name="rb_status_in_progress">In progress</string>
+    <string name="rb_status_finished">Finished</string>
+    <string name="hint_add_detail">Add detail</string>
+    <string name="login_name_hint">User</string>
+</resources>

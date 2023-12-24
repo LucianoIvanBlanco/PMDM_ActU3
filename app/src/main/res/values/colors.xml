@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores Primarios -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryLight">#BB86FC</color>
+
+    <!-- Color de Acento -->
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Colores de Texto -->
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+
+    <!-- Otros colores -->
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#6200EE</color>
+</resources>

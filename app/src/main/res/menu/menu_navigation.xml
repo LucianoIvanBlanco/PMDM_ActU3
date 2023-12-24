@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userDataFragment"
+        android:icon="@drawable/ic_user"
+        android:menuCategory="secondary"
+        android:title="@string/user_data_title" />
+    <item
+        android:id="@+id/ideasListFragment"
+        android:icon="@drawable/ic_list"
+        android:title="@string/ideas_list_title" />
+</menu>

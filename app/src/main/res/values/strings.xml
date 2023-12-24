@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">IdeasApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="login_title" translatable="false">Login</string>
+    <string name="login_password_hint">Contraseña\n</string>
+    <string name="btn_create_account">Crear cuenta</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="register_title">Crear cuenta</string>
+    <string name="register_name_hint">Ingresa tu usuario</string>
+    <string name="register_password_hint">Contraseña</string>
+    <string name="register_password2_hint">Confirmar contraseña</string>
+    <string name="user_data_title">Cuenta</string>
+    <string name="ideas_list_title">Lista</string>
+    <string name="btn_exit">Salir</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_image_selection">Seleccionar imagen\n</string>
+    <string name="idea_title">Nueva idea</string>
+    <string name="hint_idea_name">Nombre de la idea</string>
+    <string name="hind_idea_description">¿Sobre qué trata?</string>
+    <string name="tv_priority">Prioridad</string>
+    <string name="check_low">Baja</string>
+    <string name="check_medium">Media</string>
+    <string name="check_high">Alta</string>
+    <string name="btn_save">Guardar idea</string>
+    <string name="idea_detail_status">Estado </string>
+    <string name="rb_status_earring">Pendiente</string>
+    <string name="rb_status_in_progress">En proceso</string>
+    <string name="rb_status_finished">Terminado </string>
+    <string name="hint_add_detail">Añadir detalle</string>
+    <string name="login_name_hint">Usuario</string>
+</resources>
